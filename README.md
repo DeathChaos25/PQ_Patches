@@ -1,4 +1,4 @@
-# Persona Q (US) Assembly Patches
+# Persona Q/Q2 (US) Assembly Patches
 A set of assembly patches (patched in using Magikoopa) for Persona Q (US).
 
 Patches include:
@@ -17,15 +17,15 @@ P4 Protagonist - Yu Narukami
 Usage:  
 - 3DS running Luma3DS Custom Firmware :  
 
-Download the relevant files from the release tab, and place the files on the root of your SD, the entire file structure should look as follows:  
+Download the relevant files from the release tab, and place the files on the following directory on your SD, if the folders dont exist, make them:  
   
-sd:/luma/titles/00040000001D7100/exheader.bin  
-sd:/luma/titles/00040000001D7100/code.bin  
+sd:/luma/titles/<titleID>/exheader.bin  
+sd:/luma/titles/<titleID>/code.bin  
 (if using mod.cpk support)  
-sd:/luma/titles/00040000001D7100/romfs/mod.cpk  
+sd:/luma/titles/<titleID>/romfs/mod.cpk  
 
 - Citra:  
-Right click your PQ1 game icon on Citra, select "Open Mods Location" and place both the code.bin and the exheader.bin file there.  
+Right click your PQ1/PQ2 game icon on Citra, select "Open Mods Location" and place both the code.bin and the exheader.bin file there.  
 (if using mod.cpk)  
 Simply create a romfs folder and place your mod.cpk inside it on your Mods Location folder for PQ1. 
   
