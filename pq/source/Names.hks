@@ -1,0 +1,30 @@
+
+# first
+Name_Offset_00:
+  type: symbol
+  addr: 0x291b60
+  sym: Names
+
+# write?
+#Name_Offset_01:
+#  type: symbol
+#  addr: 0x2f5ee0
+#  sym: Names
+
+# full
+Name_Offset_02:
+  type: symbol
+  addr: 0x2fca94
+  sym: Names
+
+# first
+Name_Offset_03:
+  type: symbol
+  addr: 0x325e94
+  sym: Names
+
+# last
+Name_Offset_04:
+  type: symbol
+  addr: 0x325eac
+  sym: Names

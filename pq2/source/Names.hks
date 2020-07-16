@@ -1,0 +1,206 @@
+
+#########
+# Hooks #
+#########
+
+###
+# Group A1 - Last Name
+# 0x13051C - P5
+# 0x130524 - P4
+# 0x13052C - P3
+# 0x130534 - P3P
+##
+
+P5_Last_Replace:
+  type: branch
+  link: false
+  addr: 0x13051C
+  func: P5_Last_Get
+
+P4_Last_Replace:
+  type: branch
+  link: false
+  addr: 0x130524
+  func: P4_Last_Get
+
+P3_Last_Replace:
+  type: branch
+  link: false
+  addr: 0x13052C
+  func: P3_Last_Get
+
+P3P_Last_Replace:
+  type: branch
+  link: false
+  addr: 0x130534
+  func: P3P_Last_Get
+
+###
+# Group A2 - First Name
+#
+# 0x1304CC - P5
+# 0x1304D4 - P4
+# 0x1304DC - P3
+# 0x1304E4 - P3P
+##
+
+P5_First_Replace:
+  type: branch
+  link: false
+  addr: 0x1304CC
+  func: P5_First_Get
+
+P4_First_Replace:
+  type: branch
+  link: false
+  addr: 0x1304D4
+  func: P4_First_Get
+
+P3_First_Replace:
+  type: branch
+  link: false
+  addr: 0x1304DC
+  func: P3_First_Get
+
+P3P_First_Replace:
+  type: branch
+  link: false
+  addr: 0x1304E4
+  func: P3P_First_Get
+
+###
+# Group A3 - Full Name
+#
+# 0x240DC8 - P5
+# 0x240DD0 - P4
+# 0x240DD8 - P3
+# 0x240DE0 - P3P
+##
+
+P5_Full_Replace:
+  type: branch
+  link: false
+  addr: 0x240DC8
+  func: P5_Full_Get
+
+P4_Full_Replace:
+  type: branch
+  link: false
+  addr: 0x240DD0
+  func: P4_Full_Get
+
+P3_Full_Replace:
+  type: branch
+  link: false
+  addr: 0x240DD8
+  func: P3_Full_Get
+
+P3P_Full_Replace:
+  type: branch
+  link: false
+  addr: 0x240DE0
+  func: P3P_Full_Get
+
+###
+# Group B1 - P5 Hero
+#
+# 0x2A89FC - Full
+# 0x2A8A1C - Last
+# 0x2A8A3C - First
+##
+
+P5_Full_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A89FC
+  func: P5_Full_Get2
+
+P5_Last_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8A1C
+  func: P5_Last_Get2
+
+P5_First_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8A3C
+  func: P5_First_Get2
+
+###
+# Group B2 - P4 Hero
+#
+# 0x2A8A70 - Full
+# 0x2A8A90 - Last
+# 0x2A8AB0 - First
+##
+
+P4_Full_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8A70
+  func: P4_Full_Get2
+
+P4_Last_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8A90
+  func: P4_Last_Get2
+
+P4_First_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8AB0
+  func: P4_First_Get2
+
+###
+# Group B3 - P3 Hero
+#
+# 0x2A8AD0 - Full
+# 0x2A8AF0 - Last
+# 0x2A8B10 - First
+##
+
+P3_Full_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8AD0
+  func: P3_Full_Get2
+
+P3_Last_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8AF0
+  func: P3_Last_Get2
+
+P3_First_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8B10
+  func: P3_First_Get2
+
+###
+# Group B4 - P3P Hero
+#
+# 0x2A8B30 - Full
+# 0x2A8B50 - Last
+# 0x2A8B70 - First
+##
+
+P3P_Full_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8B30
+  func: P3P_Full_Get2
+
+P3P_Last_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8B50
+  func: P3P_Last_Get2
+
+P3P_First_Replace2:
+  type: branch
+  link: false
+  addr: 0x2A8B70
+  func: P3P_First_Get2

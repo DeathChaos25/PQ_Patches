@@ -1,0 +1,10 @@
+
+###
+# ModCPK Loader
+##
+
+ModCPKLoad:
+  type: branch
+  link: false
+  addr: 0x102DB4
+  func: AddNewModCPK

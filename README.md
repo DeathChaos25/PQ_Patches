@@ -1,40 +1,76 @@
-# Persona Q/Q2 (US) Assembly Patches
-A set of assembly patches (patched in using Magikoopa) for Persona Q (US).
 
-Patches include:
+# Persona Q/Q2 (US) Patches
 
-- "Canon Names Patch":  
-Patches out the player name functions to allow the longer "canon" names that normally the player cannot fit into the name input box such as Yu Narukami to display via hardcoded name calls the same way other characters do.
-- mod.cpk support:  
-Easy file replacement with mod.cpk  
-  
-  
-Names are as follow:  
-  
-P3 Protagonist - Makoto Yuki  
-P4 Protagonist - Yu Narukami  
-  
-Usage:  
-- 3DS running Luma3DS Custom Firmware :  
+A set of assembly patches for Persona Q (USA) and Persona Q2 (USA).
 
-Download the relevant files from the release tab, and place the files on the following directory on your SD, if the folders dont exist, make them:  
-  
-sd:/luma/titles/<titleID>/exheader.bin  
-sd:/luma/titles/<titleID>/code.bin  
-(if using mod.cpk support)  
-sd:/luma/titles/<titleID>/romfs/mod.cpk  
+Included patches:
 
-- Citra:  
-Right click your PQ1/PQ2 game icon on Citra, select "Open Mods Location" and place both the code.bin and the exheader.bin file there.  
-(if using mod.cpk)  
-Simply create a romfs folder and place your mod.cpk inside it on your Mods Location folder for PQ1. 
-  
-Note: It is suggested the player still enter the first names patched here, as they will be displayed in the save/load screen.
-  
-To report any bugs or issues about names incorrectly appearing where they shouldn't, just open an issue on github and we can hopefully get it fixed.  
-  
-Credits:  
-  
-Raytwo: Overall help with Magikoopa assembly patching  
-TildeHat: Locating the necessary functions that we needed to patch out to make this happen  
-lipsum: General testing help and providing test save data, making PQ1 Names patch
+* __MC Canon Names__ (`Names[.s|.hks]`) - For PQ/PQ2
+
+  Patches the MC name functions to display the "canon" names.
+  Normally the player can't fit some of these names in the name input boxes due to their length.
+
+  The set names are:
+
+  * P3MC - `Makoto Yuki` (PQ/PQ2)
+  * P4MC - `Yu Narukami` (PQ/PQ2)
+  * P3PMC - `Kotone Shiomi` (PQ2)
+  * P5MC - `Ren Amamiya` (PQ2)
+
+* __Mod Support__ (`ModCpk[.s|.hks]`) - For PQ/PQ2
+
+  Enables file replacement via a `mod.cpk` file.
+
+  __A `mod.cpk` file has to be present in `romfs` when using the `mod.cpk` patch, otherwise the game will crash.__
+
+  An empty `mod.cpk` file (containing only an empty `dummy.txt` file) is provided with each `mod.cpk` patch - replace it with your own if you want to replace game files.
+
+## Usage
+
+Relevant Title IDs for this section:
+
+* PQ (USA) - `0004000000123400`
+* PQ2 (USA) - `00040000001D7100`
+
+### 3DS (Luma3DS)
+
+1. Download the latest release.
+2. Create a mod directory for the game you are trying to patch (`sd:/luma/titles/<title_id>`).
+3. Place the files for the game you are trying to patch in the following paths:
+
+   ```txt
+   sd:/luma/titles/<title_id>/exheader.bin
+   sd:/luma/titles/<title_id>/code.bin
+   sd:/luma/titles/<title_id>/romfs/mod.cpk
+   ```
+
+4. Launch the game.
+
+### Citra
+
+1. Download the latest release.
+2. Right click on the relevant game entry and select "Open Mods Location".
+3. Place the files for the game you are trying to patch in the following paths:
+
+   ```txt
+   <citra_vfs>/load/mods/<title_id>/exefs/code.bin
+   <citra_vfs>/load/mods/<title_id>/exheader.bin
+   <citra_vfs>/load/mods/<title_id>/romfs/mod.cpk
+   ```
+
+4. Launch the game.
+
+## Building
+
+1. Setup [Magikoopa](https://github.com/RicBent/Magikoopa).
+2. Dump `code.bin` and `exheader.bin` from the game you are trying to patch.
+3. Launch Magikoopa and set the working directory to the `pq` or `pq2` patch folders, depending on the game you are trying to patch.
+   Put the aforementioned `code.bin` and `exheader.bin` files in the patch folder.
+4. If you don't want to include some of the patches, move the relevant patch files out of the `source` folder in the working directory.
+5. Click "Make and Insert". This should generate a patched `code.bin` and `exheader.bin` in the patch folder.
+6. See [Usage](#usage) for further instructions.
+
+## Acknowledgements
+
+* [Raytwo](https://github.com/Raytwo) - Overall help with Magikoopa assembly patching
+* [TildeHat](https://github.com/Tildehat) - Locating the necessary PQ2 functions that needed to be patched
