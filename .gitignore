@@ -1,0 +1,20 @@
+# output
+code.bin
+exheader.bin
+
+# intermediate
+build/
+
+# linker
+linker.x
+
+# loader
+loader.bin
+loader.elf
+loader.sym
+
+# newcode
+newcodeinfo.h
+newcode.bin
+newcode.elf
+newcode.sym
