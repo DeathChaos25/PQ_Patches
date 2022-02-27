@@ -142,28 +142,40 @@ P3P_First_Get2:
 
 P5_First:
   .asciz "Ren"
+  .org P5_First + 14
 P5_Last:
   .asciz "Amamiya"
+  .org P5_Last + 14
 P5_Full:
   .asciz "Ren Amamiya"
+  .org P5_Full + 28
 
 P4_First:
   .asciz "Yu"
+  .org P4_First + 14
 P4_Last:
   .asciz "Narukami"
+  .org P4_Last + 14
 P4_Full:
   .asciz "Yu Narukami"
+  .org P4_Full + 28
 
 P3_First:
   .asciz "Makoto"
+  .org P3_First + 14
 P3_Last:
   .asciz "Yuki"
+  .org P3_Last + 14
 P3_Full:
   .asciz "Makoto Yuki"
+  .org P3_Full + 28
 
 P3P_First:
   .asciz "Kotone"
+  .org P3P_First + 14
 P3P_Last:
   .asciz "Shiomi"
+  .org P3P_Last + 14
 P3P_Full:
   .asciz "Kotone Shiomi"
+  .org P3P_Full + 28
