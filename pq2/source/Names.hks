@@ -101,6 +101,36 @@ P3P_Full_Replace:
   addr: 0x240DE0
   func: P3P_Full_Get
 
+Fix_P4_Full_Talk:
+  type: patch
+  addr: 0x002e21f0
+  data: 0xaa38f9eb
+
+Fix_P3_Full_Talk:
+  type: patch
+  addr: 0x002e21e0
+  data: 0xae38f9eb
+
+Fix_P3P_Full_Talk:
+  type: patch
+  addr: 0x002e21b4
+  data: 0xb938f9eb
+
+Fix_P4_Full_Talk_2:
+  type: patch
+  addr: 0x002e2324
+  data: 0x5d38f9eb
+
+Fix_P3_Full_Talk_2:
+  type: patch
+  addr: 0x002e2314
+  data: 0x6138f9eb
+
+Fix_P3P_Full_Talk_2:
+  type: patch
+  addr: 0x002e22e8
+  data: 0x6c38f9eb
+
 ###
 # Group B1 - P5 Hero
 #
